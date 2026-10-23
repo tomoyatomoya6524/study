@@ -23,7 +23,7 @@ body.todo {
 	padding: 0;
 }
 .taskList input[type="text"]{
-	padding: .75rem .5rem;
+	padding: .75rem;
 	font-size: 1rem;
 	border-radius: 10px;
 	border: 1px solid #cbd5e1;
@@ -31,12 +31,13 @@ body.todo {
 	width: 80%;
 }
 .todoItems {
-	padding: .5rem;
+	padding: .75rem;
 	border: 1px solid #cbd5e1;
 	margin: .5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	border-radius: 10px;
 }
 .addButton {
 	background-color: #333;
@@ -55,6 +56,6 @@ body.todo {
 
 .todoItems input[type="checkbox"]{
 	margin-right: .5rem;
-	width: 14px;
-	height: 14px;
+	width: 20px;
+	height: 20px;
 }

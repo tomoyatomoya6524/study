@@ -39,6 +39,8 @@ function reader (){
 			todoItem.classList.add('completed');
 		}
 
+		//labelにclassを追加
+		todoLabel.classList.add('flex','items-center');
 		//label要素の中にチェックボックスとtaskを入れる
 		todoLabel.append(todoCheckBox,task.text);
 	
