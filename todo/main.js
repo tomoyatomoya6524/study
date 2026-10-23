@@ -92,7 +92,11 @@ todoList.addEventListener('click',function(e){
 		//console.log(list.dataset.index);
 		const index = list.dataset.index; // li のメモから番号を読む
 		tasks[index].isDone = e.target.checked; // ノートのその番号に、チェックの状態を書く
-		reader(); //書き直す
+
+		//10ミリ秒だけ待ってから画面を書き換える
+		setTimeout(function() {
+			reader(); //書き直す
+		}, 10);
 	}
 })
 
