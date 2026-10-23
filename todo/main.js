@@ -20,12 +20,13 @@ function reader (){
 		const todoCheckBox = document.createElement('input');
 		const todoLabel = document.createElement('label');
 		
+		//input要素にチェックボックスとclassを付与
 		todoCheckBox.type = 'checkbox';
 		
 		//削除ボタンの要素を作成
 		const removeButton = document.createElement('button');
 		const iconTrash = document.createElement('i');
-		iconTrash.classList.add('fa-solid','fa-trash-can','removeButton');
+		iconTrash.classList.add('fa-solid','fa-trash-can','removeButton' ,'border-1' ,'border-gray-400' ,'text-black');
 		removeButton.appendChild(iconTrash);
 		
 		//li要素にclassを追加
@@ -38,7 +39,7 @@ function reader (){
 			todoItem.classList.add('completed');
 		}
 
-		//lavel要素の中にチェックボックスとtaskを入れる
+		//label要素の中にチェックボックスとtaskを入れる
 		todoLabel.append(todoCheckBox,task.text);
 	
 		//labelと削除ボタンを合体

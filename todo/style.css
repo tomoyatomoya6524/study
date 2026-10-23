@@ -1,6 +1,5 @@
 body.todo {
 	background-color: #f8f9fa;
-	font-family: 'Noto Sans JP';
 }
 .completed {
 	text-decoration: line-through;
@@ -52,4 +51,10 @@ body.todo {
 	font-size: 1rem;
 	padding: .5rem;
 	border-radius: 5px;
+}
+
+.todoItems input[type="checkbox"]{
+	margin-right: .5rem;
+	width: 14px;
+	height: 14px;
 }
