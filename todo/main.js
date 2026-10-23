@@ -84,6 +84,10 @@ addButton.addEventListener('click',function(e){
 //🔸クリックで取消線(ローカルストレージ保存用)
 todoList.addEventListener('click',function(e){
 	if(e.target.type === 'checkbox'){
+		//スマホがバイブレーション機能に対応しているか確認
+		if(navigator.vibrate){
+			navigator.vibrate(15);//15ミリ秒ぶるっと振動
+		};
 		const list = e.target.closest('li');
 		//console.log(list.dataset.index);
 		const index = list.dataset.index; // li のメモから番号を読む
